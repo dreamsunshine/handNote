@@ -94,5 +94,65 @@ function SubType(){
 }
 ```
 
+## 6、组合继承
 
+```
+function SuperType(name){
+    this.name=name;
+}
+function SubType(name,age){
+    //继承属性
+    SuperType.call(this,name);
+    this.age=age;
+}
+SubType.prototype=new SuperType();
+SubType.prototype.constructor=SubType;
+```
+
+## 7、原型式继承
+
+```
+function object(o){
+    function F(){}
+    F.prototype=o;
+    return new F();
+}
+```
+
+//Object.create\(\) 两个参数：一个用作新对象原型的对象和一个为新对象定义额外属性的对象。IE9+
+
+## 8、寄生式继承
+
+```
+function createAnother(original){
+    var clone=object(original);
+    //clone.  以某种方式增强这个对象
+    return clone;
+}
+```
+
+## 9、寄生组合式继承
+
+//通过借用构造函数来继承属性，通过原型链的混成形式来继承方法。
+
+```
+function inheritPrototype(subType,superType){
+    var prototype=object(superType.prototype);  //创建对象
+    prototype.constructor=subType;              //增强对象
+    subType.prototype=prototype;                //指定对象
+}
+function SuperType(name){
+    this.name=name;
+}
+function SubType(name,age){
+    //继承属性
+    SuperType.call(this,name);
+    this.age=age;
+}
+//SubType.prototype=new SuperType();
+//SubType.prototype.constructor=SubType;
+inheritPrototype(SubType,SuperType);
+```
+
+//引用类型最理想的继承范式。
 
