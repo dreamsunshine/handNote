@@ -65,7 +65,34 @@ Person.prototype.sayName=function(){};
 
 //Object.getPrototypeOf\(object\) 取得object对象的原型IE9+
 
-//hasOwnProperty\(\) 在对象实例中返回true 
+//hasOwnProperty\(\) 在对象实例中返回true
 
 //for in列举属性，Object.keys\(\)所有可枚举属性,Object.getOwnPropertyNames\(\)列举所有实例属性，后两者IE9+
+
+## 4、原型链
+
+```
+function SuperType(){
+    this.property=true;
+}
+function SubType(){
+    this.property=false;
+}
+SubType.prototype=new SuperType();
+```
+
+//实质是重写原型对象。
+
+## 5、借用构造函数
+
+```
+function SuperType(){
+    //定义属性
+}
+function SubType(){
+    SuperType.call(this,'')//传递参数
+}
+```
+
+
 
