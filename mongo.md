@@ -8,3 +8,5 @@ use db\_name:切换到数据库
 
 show collections:输出数据库集合的列表
 
+mongoimport --db \[dbname\] --collection \[ctname\] --file \[jsonfile\] -jsonArray
+
