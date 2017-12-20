@@ -10,3 +10,7 @@
 * componentWillUpdate
 * componentDidUpdate
 * componentWillUnmount
+
+> 安卓打包：
+* 生成发行apk:gradlew assembleRelease
+* 测试发行版本：gradlew installRelease
