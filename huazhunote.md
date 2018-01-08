@@ -28,3 +28,7 @@ window.addEventListener\('error', function \(e\) {
 
 $\(window\).on\('scroll.elasticity',function \(e\){e.preventDefault\(\);}\).on\('touchmove.elasticity',function\(e\){e.preventDefault\(\);}\);
 
+choco  install/upgrade packagename -ia "INSTALLDIR=""D:\Program Files""" 
+choco install notepadplusplus.install -ia "'/D=E:\SomeDirectory\somebody\npp'"
+--install-directory=value
+
