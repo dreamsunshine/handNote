@@ -32,3 +32,5 @@ choco  install/upgrade packagename -ia "INSTALLDIR=""D:\Program Files"""
 choco install notepadplusplus.install -ia "'/D=E:\SomeDirectory\somebody\npp'"
 --install-directory=value
 
+
+
