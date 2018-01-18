@@ -12,6 +12,7 @@
 * componentWillUnmount
 
 > 安卓打包：
+https://reactnative.cn/docs/0.51/signed-apk-android.html#content
 * 生成发行apk:gradlew assembleRelease
 * 测试发行版本：gradlew installRelease
 
