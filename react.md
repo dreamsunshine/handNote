@@ -22,6 +22,7 @@ react-native init demo --verbose --version 0.38.0
 
 > 编译安卓项目
 ./gradlew :Examples:UIExplorer:android:app:installDebug
+/packager/packager.sh
 
 http://blog.csdn.net/hpu_zyh/article/details/50408392
 
