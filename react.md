@@ -32,5 +32,36 @@ http://www.lcode.org/%E8%B6%85%E8%AF%A6%E7%BB%86windows%E7%89%88%E6%9C%AC%E7%BC%
 > --scripts-version    react-native-scripts-ts||react-native-scripts(默认)
 > --package-manager  yarn || npm
 
+## gradle
+> settings.gradle
 
+    include  设置子目录
 
+> build.gradle（三个小节点）
+
+* buildscript
+
+    第一个子节点声明仓库源
+    第二个子节点声明android gradle plugin版本，
+
+* allprojects
+
+    声明所有project默认的仓库源
+    
+* task clean
+    
+    每当修改settings.gradle重新拉取包
+    
+> app/build.gradle(三个小节点)
+
+* apply
+* android
+
+    buildTypes:默认release
+    minifyEnabled:是否需要混淆
+    proguardFiles:表示混淆配置文件的名称
+    productFlavors:表示多渠道包
+
+* dependencies
+
+    引用包
