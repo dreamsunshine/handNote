@@ -32,3 +32,11 @@ rm -f *
 ## git代理
 > git config --global http.proxy
 > git config --global --unset http.proxy
+
+## git删除所有记录，全新仓库
+> git checkout --orphan latest_branch
+> git add -A
+> git commit -am "commit message"
+> git branch -D master
+> git branch -m master
+> git push -f origin master
