@@ -28,3 +28,7 @@ git cherry-pick 62ecb3
 >index.lock    rm -f ./msg/.git/index.lock
 删除文件夹
 rm -f *
+
+## git代理
+> git config --global http.proxy
+> git config --global --unset http.proxy
