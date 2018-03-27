@@ -11,4 +11,4 @@
 > listen to onActivityResult
 
 # 使用storage
-> 声明权限：<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+> 声明权限：< uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
