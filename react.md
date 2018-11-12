@@ -11,6 +11,10 @@
 * componentDidUpdate
 * componentWillUnmount
 
+重写配置：https://github.com/timarney/react-app-rewired
+
+
+
 > 安卓打包：
 https://reactnative.cn/docs/0.51/signed-apk-android.html#content
 * 生成发行apk:gradlew assembleRelease
